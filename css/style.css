@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+.header {
+    width: 10%;
+    height: 10%;
+    background: #fff;
+    color: #000;
+}
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 20%;
+    justify-content: space-around;
+    align-items: top;
+    list-style: none;
+}
