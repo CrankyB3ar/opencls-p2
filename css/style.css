@@ -34,6 +34,11 @@ header {
     padding: 0 15px 15px;
 }
 
+.logo{
+    width: 60%;
+    padding: 0 10px 0;
+}
+
 header nav {
     display: flex;
 }
@@ -47,37 +52,72 @@ search-bar {
     position: 0;
     width: 0;
     height: 0;
+
 }
 
-.search-bar .icon {
-    position: inherit;
-    top: 60 px;
-    left: 15px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: left;
-}
-
-/*footer*/
-footer {
-    flex-shrink: 0;
-    border-top: 1px solid;
-    width: 100%;
-    background: #f2f2f2;
-    color: #333;
-}
-
-footer h2 {
-    font-weight:bold;
-}
-.contenu-footer {
-    width: 992px;
-    margin: 0 auto;
+filter {
+    width: 60%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*hebrgement/populaires/activités*/
+.container-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background: yellow;
+    padding: 20px;
+}
+
+.container-hebergements {
+    flex: 7;
+    background: #f2f2f2;
+    padding: 20px;
+    margin: 5px;
+}
+
+.container-populaires {
+    flex: 3;
+    background: #f2f2f2;
+    padding: 20px;
+    margin: 5px;
+}
+
+.container-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: top,right;
+    background: brown;
+    padding: 20px;
+}
+
+.container-activités {
+    flex: 10;
+    background: #fff;
+    padding: 20px;
+}
+
+
+/*footer*/
+
+.container-footer {
+    width: 100%;
+    margin: 0 auto;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center,top;
     padding: 20px 20px 20px;
+}
+
+.container-footer h3 {
+    font-weight: bold;
 }
 
 .liste-a-propos,
@@ -88,7 +128,7 @@ footer h2 {
 .liste-a-propos li,
 .liste-hébergements li,
 .liste-assistance li {
-    padding: 0;
+    padding: 15px 0 0;
 }
 .liste-a-propos a,
 .liste-hébergements a,
