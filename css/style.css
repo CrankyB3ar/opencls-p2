@@ -1,9 +1,19 @@
-* {
+*, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+.contenu {
+    flex: 1 0 auto;
+}
 /*header*/
 
 .header {
@@ -18,8 +28,63 @@ nav {
 
 nav ul {
     display: flex;
-    flex: 1 1 20%;
     justify-content: space-around;
     align-items: top;
     list-style: none;
 }
+
+.main {
+
+}
+
+/*section box*/
+
+#box {
+    height: 100%;
+    width: 100%;
+    background: #f2f2f2;
+
+}
+
+/*footer*/
+footer {
+    flex-shrink: 0;
+    border-top: 1px solid;
+    width: 100%;
+    background: #f2f2f2;
+    color: #333;
+}
+.contenu-footer {
+    width: 992px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 10 100px;
+}
+.bloc {
+    width: 25%;
+    margin: 0 30px;
+}
+.liste-a-propos,
+.liste-hébergements,
+.liste-assistance {
+    list-style-type: none;
+}
+.liste-a-propos li,
+.liste-hébergements li,
+.liste-assistance li {
+    padding: 0;
+}
+.liste-a-propos a,
+.liste-hébergements a,
+.liste-assistance a {
+    text-decoration: none;
+}
+.liste-a-propos a:hover,
+.liste-hébergements a:hover,
+.liste-assistance a:hover {
+    color: #0065FC;
+}
+

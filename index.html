@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--css-->
+
+    <!--stylesheet-->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!--google font raleway-->
+
+    <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/6c58f2326b.js" crossorigin="anonymous"></script>
 
@@ -20,65 +23,79 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <h1><img src="images/logo/Booki.png" alt="logo"></h1>
-            <ul>
-                <li><a href="#place">Hébergements</a></li>
-                <li><a href="#lieux">Activités</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="contenu">
+        <!--header+ search bar-->
+        <header class="header">
+            <nav>
+                <h1><img src="images/logo/Booki.png" alt="logo"></h1>
+                <ul>
+                    <li><a href="#place">Hébergements</a></li>
+                    <li><a href="#lieux">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <!--search bar-->
+        <main class="main">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <!--search bar-->
 
-        <p>Filtres</p>
+            <p>Filtres</p>
 
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-    </main>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </main>
 
-    <section>
-        <div id="box">
-            <div class="box1">
-                <h1 id="place">Hébergements à Marseille</h1>
-                <!--images hébergement-->
-                <a href="images/#"><img src="images/#" alt="images" title="#" </a>
+        <!--hébergment+ activités-->
+        <section>
+            <div id="box">
+                <div class="box1">
+                    <h1 id="place">Hébergements à Marseille</h1>
+                    <!--images hébergement-->
+                    <a href="images/#"><img src="images/#" alt="images" title="#"></a>
                     <p>Afficher plus</p>
+                </div>
+
+                <div class="box2">
+                    <h1>Les plus populaires</h1>
+                </div>
+
+                <div class="box3">
+                    <h1 id="lieux">Avctivités à Marseilles</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--footer-->
+    <footer>
+
+        <div class="contenu-footer">
+
+            <div class="bloc footer-a-propos">
+                <h3>A propos</h3>
+                <ul class="liste-a-propos">
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialités</a></li>
+                </ul>
             </div>
 
-            <div class="box2">
-                <h1>Les plus populaires</h1>
+            <div class="bloc footer-hébergements">
+                <h3>hébergements</h3>
+                <ul class="liste-hébergements">
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
             </div>
 
-            <div class="box3">
-                <h1 id="lieux">Avctivités à Marseilles</h1>
+            <div class="bloc footer-assistance">
+                <h3>Assistance</h3>
+                <ul class="liste-assistance">
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <p><strong>A propos</strong>
-            <li>
-                <ul>Fonctionnement du site</ul>
-                <ul>Conditions générales de vente</ul>
-                <ul>Données et confidentialités</ul>
-            </li>
-        </p>
-        <p><strong>hébergements</strong>
-            <li>
-                <ul>Charte qualité</ul>
-                <ul>Soumettre votre hôtel</ul>
-            </li>
-        </p>
-        <p><strong>Assistance</strong>
-            <li>
-                <ul>Centre d'aide</ul>
-                <ul>Nous contacter</ul>
-            </li>
-        </p>
     </footer>
 
 </body>
