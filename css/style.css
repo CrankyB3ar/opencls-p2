@@ -30,7 +30,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center,top;
+    align-items: flex-start;
     padding: 0 15px 15px;
 }
 
@@ -56,19 +56,16 @@ search-bar {
 }
 
 filter {
-    width: 60%;
-    display: flex;
     justify-content: space-between;
-    align-items: right;
     text-decoration: none;
     list-style-type: none;
 }
 
 /*hebrgement/populaires/activités*/
-.container-1{
+#container-1{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: right;
     background: yellow;
     padding: 20px;
@@ -88,31 +85,38 @@ filter {
     margin: 5px;
 }
 
-.container-2 {
+#container-2 {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: top,right;
+    justify-content: space-around;
+    align-items: flex-start;
     background: brown;
     padding: 20px;
 }
 
 .container-activités {
-    flex: 10;
+    flex: 1 1 auto;
     background: #fff;
     padding: 20px;
 }
 
+img {
+    width: 20%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex: 1 1 auto;
+}
 
 /*footer*/
-
 .container-footer {
     width: 100%;
     margin: 0 auto;
     background: #f2f2f2;
     display: flex;
     justify-content: space-between;
-    align-items: center,top;
+    align-items: flex-start;
     padding: 20px 20px 20px;
 }
 
