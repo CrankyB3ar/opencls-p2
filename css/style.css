@@ -23,15 +23,15 @@ a:hover{
 
 /*header*/
 header {
-    position: absolute;
+    position: top;
     top: 0;
     left: 0;
     z-index: 10;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 15px 0;
+    align-items: center,top;
+    padding: 0 15px 15px;
 }
 
 header nav {
@@ -42,6 +42,23 @@ header nav a {
     margin: 0 15px;
 }
 
+/*search-bar/filters*/
+search-bar {
+    position: inherit;
+    width: 0;
+    height: 0;
+}
+
+.search-bar .icon {
+    position: inherit;
+    top: 60 px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+
+}
 /*footer*/
 footer {
     flex-shrink: 0;
