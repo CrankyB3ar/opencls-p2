@@ -28,7 +28,9 @@ img {
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-
+.border {
+    margin: 0 15px 15px;
+}
 /*header*/
 header {
     position: top;
@@ -62,51 +64,41 @@ search-bar {
 }
 
 /*filters*/
-filter {
-    padding: 20px;
-    margin: 0 20px 20px;
+filter{
+    display: flex;
+    margin: 50px 0 50px;
+}
+filter h3 {
+    margin:0 20px 0 0;
+}
+filter .icon {
+    border: 3px solid #f2f2f2;
     width: 100%;
-}
-filter .wrapper .button {
-    display: inline-block;
     height: 50px;
-    width: 50px;
-    margin: 0 5px;
-    float: left;
-    background: #DEEBFF;
-    border-radius: 50%;
+    border-radius: 50px;
+    margin: 0 25px 0 0;
 }
-filter .wrapper .button .icon {
-    display: inline-block;
-    text-align: center;
+filter .icon i {
+    width: 50px;
     height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    line-height: 50px;
-}
-filter .wrapper .button .icon i {
+    border-radius: 50px;
     color: #0065FC;
-    font-size: 25px;
-    line-height: 50px;
+    background: #DEEBFF;
 }
-filter .wrapper .button span {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 50px;
-    margin-left: 10px;
-}
-filter .wrapper-info {
 
+/*info*/
+section-info {
+    width: 100%;
+    padding: 20px 0 20px;
+    margin: 20px 0 20px;
 }
-filter .wrapper-info .button-info {
-
+section-info .wrapper .button {
 }
-filter .wrapper-info .button-info .icon-info {
-
+section-info .wrapper .button .icon {
+    display: inline-block;
 }
-filter .wrapper-info .button-info .icon-info i {
-    color: #DEEBFF;
+section-info .wrapper .button .icon i {
+    color: #0065FC;
 }
 
 /*hebrgement/populaires/activités*/
