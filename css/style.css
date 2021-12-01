@@ -2,14 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-family: 'Raleway', sans-serif; 
 }
-
 ul, nav{
     list-style: none;
 }
-
 a{
     text-decoration: none;
     color: inherit;
@@ -19,6 +16,17 @@ a{
 a:hover{
     opacity: 1;
     color: #0065FC;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 5px;
+    background: rgb(214, 170, 23);
+    border: 2px transparent;
+    border-radius:10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 /*header*/
@@ -33,36 +41,76 @@ header {
     align-items: flex-start;
     padding: 0 15px 15px;
 }
-
 .logo{
     width: 60%;
     padding: 0 10px 0;
 }
-
 header nav {
     display: flex;
+    margin-top: 20px;
 }
-
 header nav a {
+    border-top: 3px solid groove ;
     margin: 0 15px;
 }
 
-/*search-bar/filters*/
+/*search-bar*/
 search-bar {
     position: 0;
     width: 0;
     height: 0;
-
 }
 
+/*filters*/
 filter {
-    justify-content: space-between;
-    text-decoration: none;
-    list-style-type: none;
+    padding: 20px;
+    margin: 0 20px 20px;
+    width: 100%;
+}
+filter .wrapper .button {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+    float: left;
+    background: #DEEBFF;
+    border-radius: 50%;
+}
+filter .wrapper .button .icon {
+    display: inline-block;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    line-height: 50px;
+}
+filter .wrapper .button .icon i {
+    color: #0065FC;
+    font-size: 25px;
+    line-height: 50px;
+}
+filter .wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-left: 10px;
+}
+filter .wrapper-info {
+
+}
+filter .wrapper-info .button-info {
+
+}
+filter .wrapper-info .button-info .icon-info {
+
+}
+filter .wrapper-info .button-info .icon-info i {
+    color: #DEEBFF;
 }
 
 /*hebrgement/populaires/activités*/
-#container-1{
+#container-1 {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -72,7 +120,10 @@ filter {
 }
 
 .container-hebergements {
+    column-count: 3;
     flex: 7;
+    border: 2px transparent;
+    border-radius: 15px;
     background: #f2f2f2;
     padding: 20px;
     margin: 5px;
@@ -80,6 +131,8 @@ filter {
 
 .container-populaires {
     flex: 3;
+    border: 2px transparent;
+    border-radius: 15px;
     background: #f2f2f2;
     padding: 20px;
     margin: 5px;
@@ -95,33 +148,20 @@ filter {
 }
 
 .container-activités {
+    column-count: 4;
     flex: 1 1 auto;
     background: #fff;
     padding: 20px;
 }
 
-img {
-    width: 20%;
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex: 1 1 auto;
-}
-
 /*footer*/
 .container-footer {
     width: 100%;
-    margin: 0 auto;
     background: #f2f2f2;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px 20px 20px;
-}
-
-.container-footer h3 {
-    font-weight: bold;
 }
 
 .liste-a-propos,
