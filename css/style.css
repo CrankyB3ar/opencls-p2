@@ -138,36 +138,39 @@ main-content .blue {
     align-items: center;
 }
 
-.room {
-    column-count: 3;
-    flex: 2;
+.container-hbg {
+    display: flex;
+    justify-content: center;
+    height: 700px;
     border-radius: 20px;
     background: #f2f2f2;
-    padding: 20px;
-    margin: 5px;
 }
-.room-pic img {
-    width: 100%;
-    height: auto;
-    display: block;
+
+.card {
+    display: flex;
+    background: #fff;
+    height: 200px;
+    width: 250px;
+    margin: 10px;
     padding: 5px;
-    border: 2px transparent;
+}
+.card img {
+    height: 150px;
     border-radius:10px;
-    box-sizing: border-box;
     margin-bottom: 20px;
+    background-size: cover;
 }
 .top {
     flex: 1;
-    border: 2px transparent;
     border-radius: 20px;
+    height: 650px;
     background: #f2f2f2;
 }
 .top img {
-    width: 100%;
+    width: 20%;
     height: auto;
     display: block;
     padding: 5px;
-    border: 2px transparent;
     border-radius:10px;
     box-sizing: border-box;
     margin-bottom: 20px;
