@@ -128,51 +128,55 @@ section-info .wrapper .button .icon {
 section-info .wrapper .button .icon i {
     color: #0065FC;
 }
-
-/*hebrgement/populaires/activités*/
+/*hbg/pop/act*/
+main-content .blue {
+        color: #0065FC;
+}
 #container-1 {
-    width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: right;
-    background: yellow;
-    padding: 20px;
+    align-items: center;
 }
-#container-1 img {
+
+.room {
+    column-count: 3;
+    flex: 2;
+    border-radius: 20px;
+    background: #f2f2f2;
+    padding: 20px;
+    margin: 5px;
+}
+.room-pic img {
     width: 100%;
     height: auto;
     display: block;
     padding: 5px;
-    background: rgb(214, 170, 23);
     border: 2px transparent;
     border-radius:10px;
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-.container-hebergements {
-    column-count: 3;
-    flex: 7;
+.top {
+    flex: 1;
     border: 2px transparent;
-    border-radius: 15px;
+    border-radius: 20px;
     background: #f2f2f2;
-    padding: 20px;
-    margin: 5px;
 }
-.container-populaires {
-    flex: 3;
+.top img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 5px;
     border: 2px transparent;
-    border-radius: 15px;
-    background: #f2f2f2;
-    padding: 20px;
-    margin: 5px;
+    border-radius:10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
-
 #container-2 {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    background: brown;
     padding: 20px;
 }
 #container-2 img {
@@ -180,13 +184,12 @@ section-info .wrapper .button .icon i {
     height: auto;
     display: block;
     padding: 5px;
-    background: rgb(214, 170, 23);
     border: 2px transparent;
     border-radius:10px;
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-.container-activités {
+.site {
     column-count: 4;
     flex: 1 1 auto;
     background: #fff;
