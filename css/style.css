@@ -132,65 +132,78 @@ section-info .wrapper .button .icon i {
 main-content .blue {
         color: #0065FC;
 }
+.star {
+    display: flex;
+}
 #container-1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.line-1, .line-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container-hbg {
     display: flex;
-    justify-content: center;
-    height: 700px;
+    flex-direction: column;
+    justify-content: space-around;
+    flex:2;
+    margin: 5px 20px 20px 5px;
+    padding: 0 20px 0;
+    height:600px;
     border-radius: 20px;
     background: #f2f2f2;
 }
 
-.card {
-    display: flex;
-    background: #fff;
-    height: 200px;
-    width: 250px;
-    margin: 10px;
-    padding: 5px;
-}
-.card img {
-    height: 150px;
-    border-radius:10px;
-    margin-bottom: 20px;
-    background-size: cover;
-}
-.top {
-    flex: 1;
+.container-hbg .card {
+    width: 30%;
+    height: auto;
     border-radius: 20px;
-    height: 650px;
+    background: #fff;
+}
+.container-hbg .card img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:120px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.container-pop {
+    flex:1;
+    padding: 0 20px 0;
+    margin: 5px 20px 20px 5px;
+    height:600px;
+    border-radius: 20px;
     background: #f2f2f2;
 }
-.top img {
-    width: 20%;
-    height: auto;
-    display: block;
-    padding: 5px;
-    border-radius:10px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
+
+.container-pop .card {
+    border-radius: 20px;
+    background: #fff;
 }
-#container-2 {
+.container-pop .card img {
+    background-size: cover;
+    background-position: center;
     width: 100%;
+    height:120px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 20px 20px 0 0;
+}
+#container-3 {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
+    align-items: center;
 }
-#container-2 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    padding: 5px;
-    border: 2px transparent;
-    border-radius:10px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
+#container-3 img {
+    width: 20%
 }
 .site {
     column-count: 4;
@@ -209,23 +222,15 @@ main-content .blue {
     padding: 20px 20px 20px;
 }
 
-.liste-a-propos,
-.liste-hébergements,
-.liste-assistance {
+.liste-a-propos, .liste-hébergements, .liste-assistance {
     list-style-type: none;
 }
-.liste-a-propos li,
-.liste-hébergements li,
-.liste-assistance li {
+.liste-a-propos li, .liste-hébergements li, .liste-assistance li {
     padding: 15px 0 0;
 }
-.liste-a-propos a,
-.liste-hébergements a,
-.liste-assistance a {
+.liste-a-propos a, .liste-hébergements a, .liste-assistance a {
     text-decoration: none;
 }
-.liste-a-propos a:hover,
-.liste-hébergements a:hover,
-.liste-assistance a:hover {
+.liste-a-propos a:hover, .liste-hébergements a:hover, .liste-assistance a:hover {
     color: #0065FC;
 }
