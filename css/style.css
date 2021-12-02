@@ -8,6 +8,10 @@
     padding: 15px 20px 20px;
     margin: 15px 20px 20px;
 }
+h2 {
+    margin-top: 20px;
+    padding: 15px 0 15px;
+}
 ul {
     list-style: none;
 }
@@ -21,23 +25,9 @@ a:hover{
     opacity: 1;
     color: #0065FC;
 }
-/*img {
-    width: 100%;
-    height: auto;
-    display: block;
-    padding: 5px;
-    background: rgb(214, 170, 23);
-    border: 2px transparent;
-    border-radius:10px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}*/
 
 /*header*/
 header {
-    position: top;
-    top: 0;
-    left: 0;
     z-index: 10;
     display: flex;
     justify-content: space-between;
@@ -55,12 +45,42 @@ header ul {
 
 /*search-bar*/
 search-bar {
+    margin: 30px 0 30px;
     display: flex;
-    justify-content: center;
-    align-items:center;
-    width: 400px;
+    align-items: center;
+    width: 450px;
     border-radius: 10px;
 }
+input {
+    display: flex;
+    align-items: center;
+    text-align: left 5px;
+    border: 1px solid #f2f2f2;
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+}
+search-bar i {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px 0 0 15px;
+    background-color: #f2f2f2;
+}
+search-bar span {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 110px;
+    border-radius: 0 15px 15px 0;
+    background-color:#0065FC;
+    font-weight: bold;
+    font-size: 15px;
+    font-color: #fff;
+}
+
 
 /*filters*/
 filter{
@@ -109,7 +129,17 @@ section-info .wrapper .button .icon i {
     background: yellow;
     padding: 20px;
 }
-
+#container-1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 5px;
+    background: rgb(214, 170, 23);
+    border: 2px transparent;
+    border-radius:10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
 .container-hebergements {
     column-count: 3;
     flex: 7;
@@ -119,7 +149,6 @@ section-info .wrapper .button .icon i {
     padding: 20px;
     margin: 5px;
 }
-
 .container-populaires {
     flex: 3;
     border: 2px transparent;
@@ -137,7 +166,17 @@ section-info .wrapper .button .icon i {
     background: brown;
     padding: 20px;
 }
-
+#container-2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 5px;
+    background: rgb(214, 170, 23);
+    border: 2px transparent;
+    border-radius:10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
 .container-activités {
     column-count: 4;
     flex: 1 1 auto;
