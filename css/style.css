@@ -133,8 +133,9 @@ main-content .blue {
         color: #0065FC;
 }
 .star {
-    display: flex;
+    display:flex;
 }
+
 #container-1 {
     display: flex;
     justify-content: space-around;
@@ -145,8 +146,9 @@ main-content .blue {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 5px 0 5px;
 }
-
+/*fiche hebergements*/
 .container-hbg {
     display: flex;
     flex-direction: column;
@@ -154,7 +156,7 @@ main-content .blue {
     flex:2;
     margin: 5px 20px 20px 5px;
     padding: 0 20px 0;
-    height:600px;
+    height:700px;
     border-radius: 20px;
     background: #f2f2f2;
 }
@@ -174,29 +176,47 @@ main-content .blue {
     margin-bottom: 20px;
     border-radius: 20px 20px 0 0;
 }
-
+/*fiche populaires*/
 .container-pop {
     flex:1;
-    padding: 0 20px 0;
-    margin: 5px 20px 20px 5px;
-    height:600px;
+    padding: 20px;
+    margin: 5px 20px 5px;
+    height:700px;
     border-radius: 20px;
     background: #f2f2f2;
 }
 
+.title-pop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container-pop .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 15px 0 15px;
     border-radius: 20px;
     background: #fff;
 }
 .container-pop .card img {
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height:120px;
+    width: 40%;
+    height:180px;
     padding: 5px;
     margin-bottom: 20px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 0 0 20px;
 }
+.script {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*fiche activités*/
 #container-3 {
     display: flex;
     justify-content: space-around;
