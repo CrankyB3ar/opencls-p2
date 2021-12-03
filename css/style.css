@@ -2,12 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .border {
     padding: 0 20px 0;
     margin: 0px 20px 0;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+h2, h3 {
+    font-weight: bold;
 }
 
 ul {
@@ -55,8 +65,6 @@ header li {
     justify-content: center;
     align-items: center;
     height: 118px;
-    font-size: 16px;
-    font-weight: 500;
 }
 
 header li:hover {
@@ -64,8 +72,11 @@ header li:hover {
 }
 
 /****************************/
+.search-bar h2 {
+    margin: 20px 0 10px;
+}
 search-bar {
-    margin: 30px 0 30px;
+    margin: 20px 0 0 10px;
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -76,24 +87,26 @@ input {
     padding-left: 10px;
     border: 2px solid #f2f2f2;
     height: 50px;
-    width: 200px;
+    width: 230px;
     font-weight: bold;
 }
-search-bar i {
+
+.icn-mrkr {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 18px 0 0 20px;
     height: 50px;
     width: 50px;
     border-radius: 15px 0 0 15px;
     background-color: #f2f2f2;
 }
+
 search-bar p {
-    padding-left: 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 50px;
-    width: 115px;
+    width: 130px;
     border-radius: 0 15px 15px 0;
     color: #fff;
     background-color:#0065FC;
@@ -106,11 +119,12 @@ filter{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 30px 0 40px;
+    margin: 30px 0 30px;
 }
 
 filter h3 {
-    margin:0 20px 0 0;
+    font-size: 18px;
+    margin:0 20px 0;
 }
 
 filter .icon {
@@ -120,13 +134,14 @@ filter .icon {
     border: 3px solid #f2f2f2;
     height: 50px;
     border-radius: 50px;
-    margin: 0 25px 0 0;
+    margin: 0 30px 0 0;
 }
 
 filter .icon:hover {
     color: #0065FC;
 }
-filter i {
+
+.plcmnt {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,28 +153,26 @@ filter i {
 }
 
 filter p {
-    font-size: 18px;
     font-weight: bold;
-    padding: 0 10px 0;
+    padding: 0 20px 0 10px;
 }
 /********************************/
 .info {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
-.info i {
+.i-size{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #f2f2f2;
+    border: 1px solid #f2f2f2;
     height: 25px;
     width: 25px;
     margin: 10px;
     border-radius: 50px;
 }
-
 /**********************************/
 
 .star {
@@ -177,7 +190,6 @@ filter p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5px 0 5px;
 }
 /*************************************/
 .container-hbg {
@@ -185,18 +197,20 @@ filter p {
     flex-direction: column;
     justify-content: space-around;
     flex:2;
-    margin: 5px 20px 20px 5px;
-    padding: 0 20px 0;
-    height:700px;
+    height:650px;
+    padding: 20px 40px 30px;
+    margin-right: 20px;
     border-radius: 20px;
     background: #f2f2f2;
 }
 
 .container-hbg .card {
-    width: 30%;
-    height: auto;
+    width: 100%;
+    height: 200px;
+    margin: 0 15px 0;
     border-radius: 20px;
     background: #fff;
+    box-shadow: 5px 5px 5px #e2e2e2;
 }
 .container-hbg .card img {
     background-size: cover;
@@ -204,7 +218,6 @@ filter p {
     width: 100%;
     height:120px;
     padding: 5px;
-    margin-bottom: 20px;
     border-radius: 20px 20px 0 0;
 }
 /******************************/
@@ -213,9 +226,9 @@ filter p {
     flex-direction: column;
     justify-content: space-around;
     flex:1;
-    padding: 20px;
-    margin: 5px 20px 5px;
-    height:700px;
+    padding: 20px 40px 20px;
+    margin-left: 20px;
+    height:650px;
     border-radius: 20px;
     background: #f2f2f2;
 }
@@ -234,19 +247,23 @@ filter p {
     margin: 15px 0 15px;
     border-radius: 20px;
     background: #fff;
+    box-shadow: 5px 5px 5px #e2e2e2;
 }
 .container-pop .card img {
     background-size: cover;
     background-position: center;
-    width: 40%;
+    width: 45%;
+    padding: 5px 0 5px 5px;
     height:150px;
-    padding: 5px;
     border-radius: 20px 0 0 20px;
 }
 
 .script-pop {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 55%;
-    padding-left: 5%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -258,7 +275,7 @@ filter p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 700px;
+    height: 600px;
     margin: 20px 0 20px;
     background-color: #f2f2f2
 }
@@ -276,7 +293,7 @@ filter p {
     height: 600px;
     border-radius: 20px;
     background-color: #fff;
-    box-shadow: 5px 5px 5px transparent;
+    box-shadow: 5px 5px 5px;
 }
 
 .small-card {
@@ -289,7 +306,7 @@ filter p {
     height: 300px;
     border-radius: 20px;
     background-color: #fff;
-    box-shadow: 5px 5px 5px transparent;
+    box-shadow: 5px 5px 5px #e2e2e2;
 }
 
 .container-site .big-card img {
