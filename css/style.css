@@ -133,6 +133,7 @@ main-content .blue {
         color: #0065FC;
 }
 .star {
+    color:#f2f2f2;
     display:flex;
 }
 
@@ -222,40 +223,96 @@ main-content .blue {
 }
 
 /*fiche activités*/
-#container-3 {
+.container-site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    margin: 20px 0 20px;
+    background-color: #f2f2f2
+}
+
+.card-site {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: left;
 }
-#container-3 img {
-    width: 20%
+
+.big-card {
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    height: 600px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px transparent;
 }
-.site {
-    column-count: 4;
-    flex: 1 1 auto;
-    background: #fff;
-    padding: 20px;
+
+.small-card {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px transparent;
+}
+
+.container-site .big-card img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:500px;
+    border-radius: 20px 20px 0 0;
+}
+
+.container-site .small-card img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:300px;
+    border-radius: 20px 20px 0 0;
 }
 
 /*footer*/
-.container-footer {
-    width: 100%;
-    background: #f2f2f2;
+footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    padding: 20px 20px 20px;
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    background: #f2f2f2;
 }
 
-.liste-a-propos, .liste-hébergements, .liste-assistance {
+.list-propos {
     list-style-type: none;
+    height:150px;
+    margin: 20px 10px 20px;
 }
-.liste-a-propos li, .liste-hébergements li, .liste-assistance li {
+
+.list-hbg {
+    list-style-type: none;
+    height:150px;
+    margin: 20px 10px 20px;
+}
+
+.list-assist {
+    list-style-type: none;
+    height:150px;
+    margin: 20px 10px 20px;
+}
+
+.list-propos li, .list-hbg li, .list-assist li {
     padding: 15px 0 0;
 }
-.liste-a-propos a, .liste-hébergements a, .liste-assistance a {
+.list-propos a, .list-hbg a, .list-assist a {
     text-decoration: none;
 }
-.liste-a-propos a:hover, .liste-hébergements a:hover, .liste-assistance a:hover {
+.list-propos a:hover, .list-hbg a:hover, .list-assist a:hover {
     color: #0065FC;
 }
