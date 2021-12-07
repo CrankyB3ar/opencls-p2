@@ -12,18 +12,6 @@
     margin: 0px 20px 0;
 }
 
-h2 {
-    font-size: 23px;
-}
-
-h2, h3 {
-    font-weight: bold;
-}
-
-ul {
-    list-style: none;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -41,42 +29,46 @@ a:hover{
 }
 
 /***************************/
-header {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header img {
-    width: 100px;
-    height: 50px;
-    margin: 20px 0 0 20px;
+nav img {
+    width: 105px;
+    height: 55px;
+    margin: 20px 0 0 30px;
 }
 
-header ul {
+nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 25%;
 }
 
-header li {
+nav li {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 118px;
 }
 
-header li:hover {
+nav li:hover {
     border-top: 2px solid #0065FC;
 }
 
 /****************************/
-.search-bar h2 {
-    margin: 20px 0 10px;
+#search-bar {
+    margin-left: 20px;
+}
+
+#search-bar h2 {
+    margin: 20px 0 10px ;
 }
 search-bar {
-    margin: 20px 0 0 10px;
+    margin: 20px 0 0;
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -115,30 +107,36 @@ search-bar p {
     cursor: pointer;
 }
 /***************************/
-filter{
+#filter{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 30px 0 30px;
 }
 
-filter h3 {
-    font-size: 18px;
+#filter h3 {
     margin:0 20px 0;
 }
 
-filter .icon {
+#filter .icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 3px solid #f2f2f2;
     height: 50px;
     border-radius: 50px;
-    margin: 0 30px 0 0;
+    margin-right: 30px;
 }
 
-filter .icon:hover {
+#filter .icon:hover > .text {
+    opacity: 1;
     color: #0065FC;
+    cursor: pointer;
+}
+
+#filter .icon:hover > .plcmnt {
+    color: #fff;
+    background-color: #0065FC
 }
 
 .plcmnt {
@@ -147,17 +145,18 @@ filter .icon:hover {
     align-items: center;
     height: 50px;
     width: 50px;
+    margin-left: -3px;
     border-radius: 50px;
     color: #0065FC;
     background: #DEEBFF;
 }
 
-filter p {
+#filter p {
     font-weight: bold;
     padding: 0 20px 0 10px;
 }
 /********************************/
-.info {
+#info {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -270,58 +269,66 @@ filter p {
 }
 
 /**********************************/
-#container-site {
+#container-2 {
+    margin: 50px 0 50px;
+    background-color: #f2f2f2;
+}
+
+.container-site {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 600px;
-    margin: 20px 0 20px;
-    background-color: #f2f2f2
 }
 
 .card-site {
     display: flex;
-    justify-content: space-around;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
 }
-
+.title-s {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    width: 95%;
+    padding-left: 5%;
+}
 .big-card {
     background-size: cover;
     background-position: center;
-    width: 25%;
-    height: 600px;
+    width: 23%;
     border-radius: 20px;
     background-color: #fff;
-    box-shadow: 5px 5px 5px;
 }
 
 .small-card {
     display: flex;
     flex-direction:column;
     justify-content: space-between;
-    background-size: cover;
-    background-position: center;
-    width: 25%;
-    height: 300px;
+    height: 530px;
+    width: 23%;
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 5px 5px 5px #e2e2e2;
 }
 
-.container-site .big-card img {
+.big-card img {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height:500px;
+    height: 500px;
     border-radius: 20px 20px 0 0;
 }
 
-.container-site .small-card img {
+.small-card img {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height:300px;
     border-radius: 20px 20px 0 0;
 }
 
