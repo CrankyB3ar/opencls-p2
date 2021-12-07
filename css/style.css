@@ -7,9 +7,21 @@
     font-weight: 500;
 }
 
+h1 {
+    font-size: 26px
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
 .border {
     padding: 0 20px 0;
-    margin: 0px 20px 0;
+    margin: 0px 30px 0;
 }
 
 a {
@@ -115,7 +127,7 @@ search-bar p {
 }
 
 #filter h3 {
-    margin:0 20px 0;
+    margin: 3px 30px 0 20px;
 }
 
 #filter .icon {
@@ -189,6 +201,7 @@ search-bar p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 /*************************************/
 .container-hbg {
@@ -196,8 +209,8 @@ search-bar p {
     flex-direction: column;
     justify-content: space-around;
     flex:2;
-    height:650px;
-    padding: 20px 40px 30px;
+    height: 660px;
+    padding: 40px 40px 40px;
     margin-right: 20px;
     border-radius: 20px;
     background: #f2f2f2;
@@ -205,8 +218,8 @@ search-bar p {
 
 .container-hbg .card {
     width: 100%;
-    height: 200px;
-    margin: 0 15px 0;
+    height: 230px;
+    margin: 15px;
     border-radius: 20px;
     background: #fff;
     box-shadow: 5px 5px 5px #e2e2e2;
@@ -215,10 +228,16 @@ search-bar p {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height:120px;
+    height:65%;
     padding: 5px;
     border-radius: 20px 20px 0 0;
 }
+
+.info-hbg, .star, h3, p{
+    padding: 0 0 5px 7px
+
+}
+
 /******************************/
 .container-pop {
     display:flex;
@@ -251,21 +270,14 @@ search-bar p {
 .container-pop .card img {
     background-size: cover;
     background-position: center;
-    width: 45%;
+    width: 35%;
     padding: 5px 0 5px 5px;
     height:150px;
     border-radius: 20px 0 0 20px;
 }
 
-.script-pop {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 55%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.info-pop {
+    width: 65%;
 }
 
 /**********************************/
