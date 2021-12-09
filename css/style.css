@@ -40,6 +40,9 @@ a:hover{
     color:#f2f2f2;
     display:flex;
 }
+.star i {
+    font-size:5px;
+}
 
 .blue {
     color: #0065FC;
@@ -128,7 +131,7 @@ search-bar p {
 /***************************/
 #filter{
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
     padding: 30px 0 30px;
 }
@@ -240,8 +243,7 @@ search-bar p {
 }
 
 .card-hbg img {
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     width: 100%;
     height: 60%;
     border-radius: 20px 20px 0 0;
@@ -278,8 +280,7 @@ search-bar p {
     box-shadow: 5px 5px 5px #e2e2e2;
 }
 .card-pop img {
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     width: 35%;
     height: 140px;
     border-radius: 20px 0 0 20px;
@@ -319,8 +320,7 @@ search-bar p {
 }
 
 .big-card img {
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     width: 100%;
     height: 530px;
     border-radius: 20px 20px 0 0;
@@ -354,16 +354,14 @@ search-bar p {
 }
 
 .card-1 img {
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     width: 100%;
     height: 180px;
     border-radius: 20px 20px 0 0;
 }
 
 .card-2 img {
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     width: 100%;
     height: 180px;
     border-radius: 20px 20px 0 0;
