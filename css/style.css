@@ -20,6 +20,10 @@ h2 {
     font-size: 22px;
 }
 
+p {
+    font-weight: 400;
+}
+
 .border {
     padding: 0 50px 0;
 }
@@ -41,7 +45,8 @@ a:hover{
     display:flex;
 }
 .star i {
-    font-size:5px;
+    font-size:12px;
+    padding-right:2px;
 }
 
 .blue {
@@ -86,8 +91,11 @@ header img {
     margin-left: 20px;
 }
 
-#search-bar h2 {
+#search-bar h1 {
     margin: 20px 0 10px ;
+}
+#search-bar p{
+    font-weight: 400;
 }
 search-bar {
     margin: 20px 0 0;
@@ -115,18 +123,22 @@ input {
     background-color: #f2f2f2;
 }
 
-search-bar p {
+.laptop {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
     width: 130px;
+    border: none;
     border-radius: 0 15px 15px 0;
     color: #fff;
     background-color:#0065FC;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
+}
+.phone {
+    display: none;
 }
 /***************************/
 #filter{
@@ -213,6 +225,7 @@ search-bar p {
 /*************************************/
 .container-hbg {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     flex:2;
@@ -348,7 +361,15 @@ search-bar p {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+.card-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
@@ -356,14 +377,21 @@ search-bar p {
 .card-1 img {
     object-fit: cover;
     width: 100%;
-    height: 180px;
+    height: 210px;
     border-radius: 20px 20px 0 0;
 }
 
 .card-2 img {
     object-fit: cover;
     width: 100%;
-    height: 180px;
+    height: 140px;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-3 img {
+    object-fit: cover;
+    width: 100%;
+    height: 175px;
     border-radius: 20px 20px 0 0;
 }
 
@@ -399,9 +427,12 @@ footer {
 
 .list-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
+}
+.list-footer h3 {
+    margin-bottom: 20px;
 }
 
 .list-footer p {
@@ -410,19 +441,10 @@ footer {
 
 .list-propos, .list-hbg, .list-assist {
     height:150px;
-    margin-top:3%;
-}
+    margin-top:40px;
+    margin-left: 40px;
+    margin-right: 200px;
 
-.list-propos {
-    margin-left: 3%;
-}
-
-.list-hbg {
-    margin-right: 2%;
-}
-
-.list-assist {
-    margin-right: 30%;
 }
 
 /*****************************/
@@ -470,6 +492,21 @@ footer {
         justify-content: flex-start;
         align-items: center;
     }
+    .laptop {
+        display: none;
+    }
+    .phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        border: none;
+        border-radius:15px;
+        color: #fff;
+        background-color:#0065FC;
+        cursor: pointer;
+    }
     #container-1 {
         display: block;
         width: 100%;
@@ -481,5 +518,22 @@ footer {
     .container-pop {
         border-radius: 0;
         padding: 30px 20px 30px;
+    }
+
+    footer {
+        height: 500px;
+    }
+    .list-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+    }
+    .list-hbg {
+        margin-top: 20px;
+    }
+    .list-assist {
+        margin-top: -10px;
     }
 }
