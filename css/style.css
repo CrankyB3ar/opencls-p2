@@ -8,6 +8,10 @@
     letter-spacing: -1px;
 }
 
+.border {
+    padding: 0 50px 0;
+}
+
 h1, h2, h3{
     font-weight: bold;
 }
@@ -24,8 +28,9 @@ p {
     font-weight: 400;
 }
 
-.border {
-    padding: 0 50px 0;
+ul li {
+    list-style: none;
+    font-weight: 400;
 }
 
 a {
@@ -37,7 +42,6 @@ a {
 
 a:hover{
     opacity: 1;
-    color: #0065FC;
 }
 
 .star {
@@ -63,7 +67,7 @@ header {
 header img {
     width: 105px;
     height: 55px;
-    margin: 20px 0 0 30px;
+    margin: 20px 0 0 35px;
 }
 
 .nav-link {
@@ -82,6 +86,7 @@ header img {
 }
 
 .link-1:hover {
+    color: #0065FC;
     border-top: 2px solid #0065FC;
     width: 100%;
 }
@@ -92,7 +97,7 @@ header img {
 }
 
 #search-bar h1 {
-    margin: 20px 0 10px ;
+    margin: 10px 0 10px ;
 }
 #search-bar p{
     font-weight: 400;
@@ -130,6 +135,7 @@ input {
     height: 50px;
     width: 130px;
     border: none;
+    flex-shrink: 0;
     border-radius: 0 15px 15px 0;
     color: #fff;
     background-color:#0065FC;
@@ -149,7 +155,7 @@ input {
 }
 
 #filter h3 {
-    margin: 3px 30px 0 20px;
+    margin: 3px 0 0 20px;
 }
 
 #filter .icon {
@@ -159,18 +165,18 @@ input {
     border: 3px solid #f2f2f2;
     height: 50px;
     border-radius: 50px;
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 #filter .icon:hover > .text {
     opacity: 1;
-    color: #0065FC;
     cursor: pointer;
     transform: scale(1.03);
 }
 
 #filter .icon:hover > .plcmnt {
     color: #fff;
+    cursor: pointer;
     background-color: #0065FC;
     transform: scale(1.03);
 }
@@ -208,13 +214,15 @@ input {
     margin: 10px;
     border-radius: 50px;
 }
+.i-size i {
+    font-size:12px;
+}
 
 /**********************************/
 #container-1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .card-hbg:hover, .card-pop:hover {
@@ -224,31 +232,27 @@ input {
 
 /*************************************/
 .container-hbg {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
     flex:2;
-    height: 650px;
     margin-right: 40px;
-    padding: 30px 40px 30px;
+    padding: 40px 30px 40px;
     border-radius: 20px;
     background: #f2f2f2;
 }
 
-.line-1, .line-2 {
+.card-list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.line-2{
-    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card-hbg {
-    width: 31%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     height: 210px;
+    width: 200px;
+    min-width: 200px;
+    margin: 15px;
     padding: 5px;
     border-radius: 20px;
     background: #fff;
@@ -270,14 +274,28 @@ input {
     margin: 5px 0 0 10px;
 }
 
+.info-hbg p {
+    margin-top: 5px;
+    margin-bottom:7px;
+}
+
+.container-hbg h2 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.more {
+    margin-top: 20px;
+    margin-left: 15px
+}
+
 /******************************/
 .container-pop {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     flex:1;
-    height: 650px;
-    padding: 30px 40px 30px;
+    padding: 40px 30px 40px;
     border-radius: 20px;
     background: #f2f2f2;
 }
@@ -287,6 +305,7 @@ input {
     justify-content: center;
     align-items: center;
     height: 150px;
+    margin:15px;
     padding: 5px;
     border-radius: 20px;
     background: #fff;
@@ -300,6 +319,7 @@ input {
 }
 
 .title-pop {
+    margin: 0 15px 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -309,9 +329,22 @@ input {
     width: 65%;
 }
 
+.text-pop {
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
 /**********************************/
 #container-2 {
     margin: 50px 0 50px;
+}
+
+#container-2 h2 {
+    padding-bottom: 30px;
+}
+
+#container-2 h3 {
+    font-size: 20px;
 }
 
 .container-site {
@@ -319,32 +352,31 @@ input {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 600px;
+    height:500px;
 }
-
-.big-card {
+.grid-1_3{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 23%;
-    height: 530px;
+}
+.big-card {
     border-radius: 20px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
 .big-card img {
     object-fit: cover;
+    height: 410px;
     width: 100%;
-    height: 530px;
     border-radius: 20px 20px 0 0;
 }
 
-.small-card {
+.grid-2_4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 23%;
-    height: 530px;
 }
 
 .card-1 {
@@ -361,11 +393,12 @@ input {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    margin-top: 40px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
-.card-3 {
+.card-3, .card-4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -374,24 +407,28 @@ input {
     box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
+.card-4 {
+    margin-top: 40px;
+}
+
 .card-1 img {
     object-fit: cover;
+    height: 200px;
     width: 100%;
-    height: 210px;
     border-radius: 20px 20px 0 0;
 }
 
 .card-2 img {
     object-fit: cover;
+    height:100px;
     width: 100%;
-    height: 140px;
     border-radius: 20px 20px 0 0;
 }
 
-.card-3 img {
+.card-3 img, .card-4 img {
     object-fit: cover;
+    height: 150px;
     width: 100%;
-    height: 175px;
     border-radius: 20px 20px 0 0;
 }
 
@@ -400,7 +437,6 @@ input {
     justify-content: flex-start;
     align-items: center;
     height: 70px;
-    width: 95%;
     padding-left: 5%;
 }
 
@@ -409,56 +445,47 @@ input {
     cursor: pointer;
 }
 
-.card-1:hover {
-    transform: scale(1.03);
-    cursor: pointer;
-}
-
-.card-2:hover {
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover{
     transform: scale(1.03);
     cursor: pointer;
 }
 
 /**************************************/
 footer {
-    height: 210px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 50px 50px;
     background: #f2f2f2;
 }
 
-.list-footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-}
-.list-footer h3 {
-    margin-bottom: 20px;
-}
-
-.list-footer p {
-    margin-top: 10px;
+footer h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .list-propos, .list-hbg, .list-assist {
-    height:150px;
-    margin-top:40px;
-    margin-left: 40px;
-    margin-right: 200px;
+    width: 40%
+}
 
+.list-propos li, .list-hbg li, .list-assist li {
+    padding-top: 10px;
 }
 
 /*****************************/
 @media screen and (max-width: 992px) {
-
+   #filter .icon {
+       margin-bottom: 20px;
+   }
+   #info {
+       margin-bottom: 0;
+   }
 }
 
 @media screen and (max-width: 768px) {
     .border {
         padding: 0;
     }
-    h1 {
-        font-size:28px;
-    }
+    /******************/
     header {
         display: flex;
         flex-direction: column;
@@ -487,6 +514,7 @@ footer {
         border-top: none;
         border-bottom: 4px solid #0065FC;
     }
+    /*****************************************/
     search-bar {
         display: flex;
         justify-content: flex-start;
@@ -507,8 +535,13 @@ footer {
         background-color:#0065FC;
         cursor: pointer;
     }
+    /******************************************/
+    #filter .icon {
+        margin-bottom: 20px;
+    }
+    /**************************************/
     #container-1 {
-        display: block;
+        flex-direction: column-reverse;
         width: 100%;
     }
     .container-hbg {
@@ -519,21 +552,24 @@ footer {
         border-radius: 0;
         padding: 30px 20px 30px;
     }
-
+    /**********************************/
+    .big-card {
+        height: 100%;
+        width: 100%;
+        height: 200px
+    }
+    .card-1, .card-2, .card-3 {
+        height: 100%;
+        width: 100%;
+        height: 200px
+    }
+    /*************************************/
     footer {
-        height: 500px;
+        padding: 0 40px 50px;
+        flex-wrap: wrap;
     }
-    .list-footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-
-    }
-    .list-hbg {
-        margin-top: 20px;
-    }
-    .list-assist {
-        margin-top: -10px;
+    .list-propos, .list-hbg, .list-assist {
+        width: 100%;
+        margin-top: 50px;
     }
 }
