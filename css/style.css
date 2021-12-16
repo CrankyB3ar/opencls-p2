@@ -23,13 +23,11 @@ h1 {
 h2 {
     font-size: 22px;
 }
-
-p {
+h6 {
     font-weight: 400;
 }
 
-ul li {
-    list-style: none;
+p {
     font-weight: 400;
 }
 
@@ -49,7 +47,7 @@ a:hover{
     display:flex;
 }
 .star i {
-    font-size:12px;
+    font-size:14px;
     padding-right:2px;
 }
 
@@ -221,7 +219,6 @@ input {
 #container-1 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 30px;
 }
 
@@ -232,7 +229,7 @@ input {
 
 /*************************************/
 .container-hbg {
-    flex:2;
+    width: 65%;
     margin-right: 40px;
     padding: 40px 30px 40px;
     border-radius: 20px;
@@ -249,8 +246,8 @@ input {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 210px;
-    width: 200px;
+    overflow: hidden;
+    width:25%;
     min-width: 200px;
     margin: 15px;
     padding: 5px;
@@ -260,10 +257,13 @@ input {
 }
 
 .card-hbg img {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     object-fit: cover;
     width: 100%;
-    height: 60%;
-    border-radius: 20px 20px 0 0;
+    max-height: 120px;
+    border-radius: 15px 15px 0 0;
 }
 
 .info-hbg {
@@ -279,59 +279,67 @@ input {
     margin-bottom:7px;
 }
 
+.info-hbg .star {
+    padding-bottom: 2px;
+}
+
 .container-hbg h2 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-left: 15px;
 }
 
 .more {
+    width:15%;
     margin-top: 20px;
-    margin-left: 15px
+    margin-left: 15px;
 }
+
 
 /******************************/
 .container-pop {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex:1;
+    width:35%;
     padding: 40px 30px 40px;
     border-radius: 20px;
     background: #f2f2f2;
 }
 
+.title-pop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 15px 0;
+}
+
 .card-pop {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    margin:15px;
+    flex-direction: row;
+    flex-grow: 1;
+    min-width: 200px;
+    margin: 15px;
     padding: 5px;
     border-radius: 20px;
     background: #fff;
     box-shadow: 5px 5px 5px #e2e2e2;
 }
+.card-pop-2_3 {
+    padding-top: 5px
+}
 .card-pop img {
     object-fit: cover;
     width: 35%;
     height: 140px;
-    border-radius: 20px 0 0 20px;
-}
-
-.title-pop {
-    margin: 0 15px 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-radius: 15px 0 0 15px;
 }
 
 .info-pop {
-    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0 15px 20px;
 }
 
-.text-pop {
-    margin-top: 5px;
-    margin-bottom: 7px;
+.text-pop h3{
+    margin-bottom:8px
 }
 
 /**********************************/
@@ -352,14 +360,16 @@ input {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height:500px;
 }
-.grid{
+
+.grid-1, .grid-2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 23%;
+    height:500px;
 }
+
 .big-card {
     border-radius: 20px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
@@ -429,7 +439,7 @@ input {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 70px;
+    height: 60px;
     padding-left: 5%;
 }
 
@@ -461,7 +471,13 @@ footer h3 {
 }
 
 .list-propos li, .list-hbg li, .list-assist li {
+    font-weight: 400;
     padding-top: 10px;
+}
+
+footer li, footer a {
+    list-style: none;
+    font-weight: 400;
 }
 
 /*****************************/
@@ -483,8 +499,11 @@ footer h3 {
     .container-pop {
         width: 100%;
     }
+    .card-pop-2_3 {
+        padding-top: 0;
+    }
 }
-
+/**************************************/
 @media screen and (max-width: 768px) {
     * {
         letter-spacing: 0;
@@ -552,13 +571,45 @@ footer h3 {
         padding-left: 0;
         padding-right: 0;
     }
+    .card-hbg {
+        width: 100%;
+    }
+    .card-hbg img {
+        height: 200px;
+    }
+    .more {
+        width:30%;
+        padding-left: 10px;
+    }
     .container-pop {
         border-radius: 0;
         padding: 30px 0 30px;
     }
+    .card-pop img {
+        height: 160px;
+    }
     /**********************************/
     #container-2 {
         padding: 0 20px 0;
+        flex-wrap: wrap;
+    }
+    #container-2 img {
+        height: 160px;
+        width:100%;
+    }
+    .grid-1, .grid-2 {
+        width: 100%;
+    }
+    .container-site {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .grid-1 {
+        height: 230px;
+    }
+    .card-2, .card-4{
+        margin-top: 20px;
     }
     /*************************************/
     footer {
